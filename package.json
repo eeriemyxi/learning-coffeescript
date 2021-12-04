@@ -1,0 +1,12 @@
+{
+    "dependencies": {
+        "chalk": "4.1.2",
+        "coffeescript": "",
+        "enquirer": "^2.3.6",
+        "gulp-coffee": "^3.0.3",
+        "inquirer": "^8.2.0",
+        "prompt": "^1.2.0",
+        "terminal-kit": "^2.2.3",
+        "yaml": "^1.10.2"
+    }
+}

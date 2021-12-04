@@ -1,0 +1,17 @@
+products:
+  sword:
+    name: sword
+    desc: Cheap and sharp tool.
+    price: 250
+    speed: 10
+    attack: 10
+  knife:
+    name: knife
+    desc: Another cheap, sharp and short tool.
+    price: 250
+    speed: 20
+    attack: 5.5
+user_info:
+  balance: 0
+  name: Not specified.
+  items: []
