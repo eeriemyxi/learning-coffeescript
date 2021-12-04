@@ -1,5 +1,5 @@
-Handler  = (require "./command_handler").Handler
-Commands = (require "./commands").Commands
+Handler  = require "./command_handler"
+Commands = require "./commands"
 
 
 commands = new Commands

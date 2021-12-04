@@ -1,5 +1,5 @@
 enquirer     = require "enquirer"
-Utility      = (require "./ext/utils").Utility
+Utility      = require "./ext/utils"
 terminal_kit = require "terminal-kit"
 
 term  = new terminal_kit.Terminal
@@ -33,4 +33,4 @@ class CommandHandler
                         )
                 
 
-exports.Handler = CommandHandler
+module.exports = CommandHandler

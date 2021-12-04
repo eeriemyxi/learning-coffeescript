@@ -12,7 +12,7 @@ class Database
         fs.writeFileSync(@file, db, encoding: "utf-8")
 
 
-class Utility extends Database
+module.exports = class Utility extends Database
     constructor: () ->
         super()
         @STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg
@@ -21,9 +21,4 @@ class Utility extends Database
     get_params: (func) ->
         fnStr = func.toString().replace(@STRIP_COMMENTS, '')
         result = fnStr.slice(fnStr.indexOf('(') + 1, fnStr.indexOf(')')).match(@ARGUMENT_NAMES)
-        # if result == null
-        #     result = []
-        # result
         return if result is null then [] else result
-    
-exports.Utility = Utility

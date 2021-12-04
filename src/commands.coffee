@@ -3,7 +3,7 @@ fs           = require "fs"
 yaml         = require "yaml"
 chalk        = require "chalk"
 terminal_kit = require "terminal-kit"
-Utility      = (require "./ext/utils").Utility
+Utility      = require "./ext/utils"
 
 utils = new Utility
 term  = new terminal_kit.Terminal
@@ -85,4 +85,4 @@ class Commands
             _userdb: @userdb
         return true
 
-exports.Commands = Commands
+module.exports = Commands
